@@ -1,0 +1,64 @@
+#h1-home{
+    font-size: 40px;
+    position: relative;
+    top: -200px;
+}
+
+.navbar-collapse {
+    justify-content: right;
+}
+
+.navbar-nav{
+    gap: 40px;
+}
+
+.how-to-h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* ---------------------------Cartas de como funciona  ---------------------------*/
+.card {
+    max-width: 18rem;
+    margin: 0 auto;
+    text-align: center
+}
+
+.tab-content {
+    margin-top: 2rem;
+}
+
+.btn{
+    width: 20vw;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/*  --------------------------- fin Cartas de como funciona --------------------------- */
+
+#h1-home span {
+    color: #866552;
+}
+
+
+@media (max-width: 480px) { 
+    #h1-home{
+        font-size: 35px;
+        position: relative;
+        top: -240px;
+    }
+    .navbar-nav{
+        gap: 0px;
+    }
+    .how-to-h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .btn{
+        margin-bottom: 30px;
+    }
+}
+  
+@media (max-width: 768px) {/*mobile mas fino*/
+
+}
