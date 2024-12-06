@@ -14,7 +14,7 @@
 </head>
 <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar-nav" class="navbar navbar-expand-lg bg-body-tertiary" style="z-index: 2;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">PET ADOPTED</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,15 +49,20 @@
 <body>
     <section id="home">
         <div id="home" class="bg-image text-black text-center d-flex align-items-center justify-content-center"
-            style="background-image: url('img/inicio-crema.png'); height: 100vh; background-size: cover; background-position: center;">
-            <div>
-                <h1 id="h1-home" data-aos="fade-up" data-aos-delay="100">NO COMPRE.
-                    <hr class="t-block d-sm-none"> <span> <b>ADOPTE.</b></span>
+            style="background-image: url('img/inicio1.jpg'); height: 94.5vh; background-size: cover; background-position: center;">
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <div class="adoption-header" data-aos="fade-up" data-aos-delay="100">
+                <h1 id="h1-home" class="split-text">
+                  <div class="top-text"><b>NO</b> COMPRE.</div>
+                  <div class="divider"></div>
+                  <div class="bottom-text"><span> <b>ADOPTE.</b></span>
                 </h1>
-            </div>
+              </div>
+              
         </div>
-
     </section>
+    
 
 
     <section id="how-to" style="background-color: #f0e9de;">
@@ -83,30 +88,57 @@
                                 <!-- Card 1 -->
                                 <div class="col">
                                     <div class="card">
-                                        <img src="img/Diseño sin título (2).png" class="card-img-top" alt="...">
+                                        <img src="img/perro1.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title"><b>NOMBRE</b></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title"><b>LEILA</b></h5>
+                                                <p class="d-inline-flex gap-1">
+                                                    <a id="btn-card" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" style=" max-width: 7vw;">
+                                                    ¡SABER MAS!
+                                                    </a>
+                                                </p>
+                                                <div class="collapse" id="collapseExample1">
+                                                    <div class="card card-body">
+                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Card 2 -->
                                 <div class="col">
                                     <div class="card">
-                                        <img src="img/Diseño sin título (3).png" class="card-img-top" alt="...">
+                                        <img src="img/perro2.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title"><b>NOMBRE</b></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title"><b>ROCO</b></h5>
+                                                <p class="d-inline-flex gap-1">
+                                                    <a id="btn-card" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style=" max-width: 7vw;">
+                                                    ¡SABER MAS!
+                                                    </a>
+                                                </p>
+                                                <div class="collapse" id="collapseExample2">
+                                                    <div class="card card-body">
+                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Card 3 -->
                                 <div class="col">
                                     <div class="card">
-                                        <img src="img/Diseño sin título (4).png" class="card-img-top" alt="...">
+                                        <img src="img/perro3.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title"><b>NOMBRE</b></h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title"><b>PANCHO</b></h5>
+                                                <p class="d-inline-flex gap-1">
+                                                    <a id="btn-card" class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style=" max-width: 7vw;">
+                                                    ¡SABER MAS!
+                                                    </a>
+                                                </p>
+                                                <div class="collapse" id="collapseExample3">
+                                                    <div class="card card-body">
+                                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

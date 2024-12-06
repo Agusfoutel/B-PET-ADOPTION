@@ -1,8 +1,92 @@
-#h1-home{
-    font-size: 60px;
-    position: relative;
-    top: -230px;
+#navbar-nav{
+    background-color: #d2c8bc !important;
 }
+#h1-home{
+    color: white;
+    font-size: 100px;
+    position: relative;
+    top: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta el color y la opacidad según necesites */
+    z-index: 1;
+}
+
+#home h1 {
+    z-index: 2;
+    position: relative; /* Asegura que el texto esté encima del overlay */
+}
+
+.adoption-header {
+    text-align: center;
+    position: relative;
+  }
+  
+  .split-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .top-text {
+    animation: slideFromBottom 1.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .bottom-text {
+    animation: slideFromTop 1.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .divider {
+    height: 2px;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+    animation: expandWidth 1s ease-out forwards;
+    transform: scaleX(0);
+  }
+  
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes expandWidth {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+
 
 .navbar-collapse {
     justify-content: right;
@@ -21,7 +105,7 @@
 
 /* ---------------------------Cartas de mascotas  ---------------------------*/
 .card {
-    max-width: 18rem;
+    max-width: 19rem;
     margin: 0 auto;
     text-align: center
 }
@@ -34,20 +118,37 @@
     width: 12vw;
     border-radius: 20px;
     margin-bottom: 20px;
+    min-width: fit-content;
+    background-color: #8e6b58;
+    border: none;
 }
+.d-inline-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-card {
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+    max-width: 7vw;
+}
+
 
 /*  --------------------------- fin Cartas de mascotas --------------------------- */
 
+
+
+/*  --------------------------- mobile --------------------------- */
 #h1-home span {
-    color: #866552;
+    color: #b78e77;
 }
 
 
 @media (max-width: 480px) { 
     #h1-home{
-        font-size: 35px;
+        font-size: 50px;
         position: relative;
-        top: -240px;
+        top: -140px;
     }
     .navbar-nav{
         gap: 0px;
@@ -59,6 +160,7 @@
     .btn{
         margin-bottom: 30px;
     }
+    
 }
   
 @media (max-width: 768px) {/*mobile mas fino*/
@@ -80,3 +182,5 @@
 .btn-nav:hover a{
     color: #7c5e4d;
 }
+
+/*  --------------------------- fin mobile --------------------------- */
