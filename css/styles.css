@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-/* ---------------------------Cartas de como funciona  ---------------------------*/
+/* ---------------------------Cartas de mascotas  ---------------------------*/
 .card {
     max-width: 18rem;
     margin: 0 auto;
@@ -29,12 +29,12 @@
 }
 
 .btn{
-    width: 20vw;
+    width: 12vw;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
-/*  --------------------------- fin Cartas de como funciona --------------------------- */
+/*  --------------------------- fin Cartas de mascotas --------------------------- */
 
 #h1-home span {
     color: #866552;
@@ -61,4 +61,20 @@
   
 @media (max-width: 768px) {/*mobile mas fino*/
 
+}
+
+.btn-nav{
+    background-color: #d2c8bc;
+    border-radius: 7px;
+}
+
+.btn-nav a{
+    color: #3d2e26;
+}
+.btn-nav .active{
+    background-color: #3d2e26 !important;
+}
+
+.btn-nav:hover a{
+    color: #7c5e4d;
 }
